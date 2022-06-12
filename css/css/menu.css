@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.cabecalho{
+    background-color: #333;
+    border-bottom: solid 5px blue;
+    height: 80px;
+    box-sizing: content-box;
+}
+.logo{
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+.logo img{
+    height: 100%;
+}
+.menu-toggle{
+    float: right;
+    background-color: aqua;
+    border: solid 1px rgb(0, 150, 255);
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+    display: none;
+}
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 15px;
+}
+.menu.ul{
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 15px;
+}
+.menu a:hover,
+ .menu a.selected{
+    background-color: orangered;
+    color: black;
+}
+/* a:link, a:visited,  a:hover, a:active{
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+
+} */
+.autenticacao{
+    display: none;
+    font-size: 15px;
+    border: none;
+    height: 80px;
+    padding: 30px 5px 30px 30px ;
+    text-transform: uppercase;
+    /* position: fixed ; */
+    font-weight: bold;
+    float: right;
+}
+.autenticacao a{
+    color: white;
+    text-decoration: none;
+}
+.botao{
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10;
+
+}
+.destaque{
+    background-color: red;
+    color: #fff;
+}
+@media (min-width: 1000px){
+    .autenticacao{
+        display: inline-block ;
+    }
+}
+@media (max-width: 700px){
+    .menu-toggle{
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+    }
+}
